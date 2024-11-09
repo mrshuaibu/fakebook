@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Shuaibu Michael">
+        <meta name="description" content="My web project">
+        <meta name="keywords" content="html, css, web, seo, web development">
+        <title> Fakebook </title>
+        <link rel="icon" href="./assets/img/favicon.png" type="image/x=icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
+        <link rel="stylesheet" href="./assets/css/style.css" media="all">
+        <script src="./assets/js/index.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="container flex nav">
+                <div class="logo">
+                    <h1> Fakebook </h1>
+                </div>
+                <nav>
+                    <ul class="nav-list flex">
+                        <li class="nav-item"> 
+                            <a href="#" class="nav-link">Friends</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a href="#" class="nav-link">Pages</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a href="#" class="nav-link">Groups</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a href="#" class="nav-link">My ads</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a href="#" class="nav-link">Settings</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu-icon">
+                    <img 
+                    src="./assets/img/favicon.png" 
+                    alt="user profile picture" 
+                    class="profile-pic"
+                    >
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="input-area">
+                    <textarea 
+                    name="post" 
+                    class="text-area"
+                    placeholder="What's new Michael?"
+                    >
+                    </textarea>
+                    <div class="post-upload flex">
+                        <input 
+                        type="file" 
+                        id="fileUpload" 
+                        class="upload-input" 
+                        accept="image/*" 
+                        >
+                        <div class="flex upload-container">
+                            <label for="fileUpload" class="upload-icon">
+                                <i class="fa-solid fa-image upload-icon"></i>
+                            </label>
+                            <span id="fileName">No file selected</span> 
+                        </div>
+                        <button class="post-button">Post</button>
+                    </div>
+                    <div class="display-area"></div>
+                </div>
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close-btn">&times;</span>
+                        <p>Your profile information goes here.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <div class="container flex height">
+                <ul class=" social-list flex ">
+                    <li>
+                        <a 
+                        href="https://www.linkedin.com/in/oluwajuwon-shuaibu/" 
+                        target="_blank"
+                        >
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                        href="https://www.instagram.com/meet__michael/" 
+                        target="_blank"
+                        >
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mrshuaibu" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="copyright"><p>&copy;2024 Shuaibu Michael</p></div>
+            </div>
+        </footer>
+    </body>
+</html>
